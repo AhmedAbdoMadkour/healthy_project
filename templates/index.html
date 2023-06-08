@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<!-- START LANDING -->
+<section class="landing">
+    <div class="text_landing">
+        <img src="{% static 'images/landing_1.jpg' %}" alt="">
+        <div class="over_landing">
+            <h2>diet track</h2>
+            <q>يلا ندلع الدايت</q>
+            <p>I'm Ahmed tantawy, a registered
+                <br> dietitian and certified
+                <br> health coach.
+            </p>
+            <a href="#services">book a session</a>
+        </div>
+    </div>
+    <img src="{% static 'images/landing_2.jpg' %}" alt="" class="landing_person">
+</section>
+<!-- END LAINDING -->
+<!-- START LANDING MOBILE SCREEN-->
+<section class="landing_mobile">
+    <img src="images/landing_2 - mobile.jpg" alt="" class="landing_person">
+    <div class="over_landing_mobile">
+        <h2>diet track</h2>
+        <q>هندلع الدايت</q>
+        <p>I'm Ahmed tantawy, a registered
+            <br> dietitian and certified
+            <br> health coach.
+        </p>
+        <a href="#booking">book a session</a>
+    </div>
+    <img src="images/landing_1 - mobile.jpg" alt="">
+</section>
+<!-- END LAINDING MOBILE SCREEN-->
+<!-- START  social fixed and chat-->
+<div class="social_fixed">
+    <a href="https://www.instagram.com/diet.track.ahmed_tantawy/" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100064284721355" target="_blank"><i
+            class="fa-brands fa-facebook-f"></i></a>
+    <a href=""><i class="fa-brands fa-twitter" target="_blank"></i></a>
+</div>
+<div class="chat">
+    <i class="fa-regular fa-message"></i>
+    <span>let's chat!</span>
+</div>
+<!-- END social fixed and chat-->
+<!-- START HEALTHY AND LIFE -->
+<section class="healthy_life">
+    <div class="container">
+        <h2>improve your health,
+            <br> improve your life
+        </h2>
+        <p>I'm a paragraph. Click here to add your own text and edit me. Its easy. Just click “Edit Text” or double
+            click me to add your own content and make changes to the font. Iam a great place for you to tell a story
+            and let your users know a little more about you.</p>
+        <a href="philosophy.html">my story</a>
+        <div class="img_store">
+            <div class="img_story_1">
+                <img src="images/my_store_1.jpg" alt="">
+            </div>
+            <div class="img_story_2">
+                <img src="images/my_store_2.jpg" alt="">
+            </div>
+            <div class="img_story_3">
+                <img src="images/my_store_3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END HEALTHY AND LIFE -->
+<!-- START SERVICES -->
+<section class="services" id="services">
+    <h2>services</h2>
+    <div class="container">
+        <div class="box_service">
+            <div class="type_services">
+                <h3>initial consultation</h3>
+                <p>Use this area to describe one of your services</p>
+            </div>
+            <div class="time_services">
+                <p>1 hr</p>
+                <span>$100</span>
+            </div>
+            <div class="book_services">
+                <a href="booking_initial.html">book now</a>
+            </div>
+        </div>
+        <div class="box_service">
+            <div class="type_services">
+                <h3>dietitian mentoring</h3>
+                <p>Use this area to describe one of your services</p>
+            </div>
+            <div class="time_services">
+                <p>1 hr</p>
+                <span>$100</span>
+            </div>
+            <div class="book_services">
+                <a href="booking_dietitian.html">book now</a>
+            </div>
+        </div>
+        <div class="box_service">
+            <div class="type_services">
+                <h3>online session</h3>
+                <p>Use this area to describe one of your services</p>
+            </div>
+            <div class="time_services">
+                <p>1 hr</p>
+                <span>$100</span>
+            </div>
+            <div class="book_services">
+                <a href="booking_online.html">book now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SERVICES -->
+<!-- START TESTIMONIALS -->
+<section class="testimonials">
+    <div class="container">
+        <h2>testimonials</h2>
+        <q>I'm a testimonial. click to edit me and add text that
+            says something nice about you and your services.Let your
+            customers review you and tell their friends how great you are.</q>
+        <span class="name">alex,31</span>
+        <span class="loding">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+        </span>
+    </div>
+</section>
+<!-- END TESTIMONIALS -->
+<!-- START NOURISH -->
+<section class="nourish">
+    <h2>nourish your body & soul</h2>
+    <div class="container">
+        <div class="box_nourish">
+            <img src="images/nourish_1.jpg" alt="">
+            <div class="text_box_nourish">
+                <p>how to change your eating habits</p>
+                <span><i class="fa-regular fa-message"></i>0</span>
+            </div>
+        </div>
+        <div class="box_nourish">
+            <img src="images/nourish_2.jpg" alt="">
+            <div class="text_box_nourish">
+                <p>don't be afraid of the scale!</p>
+                <span><i class="fa-regular fa-message"></i>0</span>
+            </div>
+        </div>
+        <div class="box_nourish">
+            <img src="images/nourish_3.jpg" alt="">
+            <div class="text_box_nourish">
+                <p>the 3 best podcaste for intuitive eating</p>
+                <span><i class="fa-regular fa-message"></i>0</span>
+            </div>
+        </div>
+    </div>
+    <a href="blog.html">read more</a>
+</section>
+<!-- END NOURISH -->
+<!-- START FEATURED -->
+<section class="featured">
+    <h2>as featured in</h2>
+    <div class="container">
+        <img src="images/featured_1.jpg" alt="">
+        <img src="images/featured_2.jpg" alt="">
+        <img src="images/featured_3.jpg" alt="">
+        <img src="images/featured_4.jpg" alt="">
+        <img src="images/featured_5.jpg" alt="">
+    </div>
+</section>
+<!-- END FEATURED -->
+{% endblock %}

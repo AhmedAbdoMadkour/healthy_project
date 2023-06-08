@@ -1,0 +1,1090 @@
+/* START GLOBAL RULES */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* START MAIN TITAL PAGES */
+.mian_tital_pages {
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: capitalize;
+    padding: 20px 0;
+}
+
+/* END MAIN TITAL PAGES */
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SMALL SCREEN */
+@media (min-width:768px) {
+
+    .container {
+        width: 750px;
+    }
+}
+
+/* MEDIUM SCREEN */
+@media (min-width:992px) {
+
+    .container {
+        width: 970px;
+    }
+}
+
+/* LARGE SCREEN */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* END GLOBAL RULES */
+/* START VARIABVLE */
+:root {
+    --main-color: #008566;
+    --section-color: #f9ecff;
+    --over-image-color: #5b219241;
+}
+
+/* END VARIABLE */
+
+/* START HEADER */
+header {
+    background-color: white;
+    box-shadow: 0 0 10px #ccc;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 120px;
+}
+
+header nav {
+    flex: 1;
+}
+
+header ul {
+    display: flex;
+    justify-content: end;
+    font-weight: bold;
+}
+
+header li {
+    padding: 20px;
+
+}
+
+header a {
+    color: black;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+header a i {
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+header .links {
+    display: none;
+}
+
+/* END HEADER */
+/* START LANDING */
+
+.landing {
+    display: flex;
+}
+
+.landing_mobile {
+    display: none;
+}
+
+.landing img {
+    width: 100%;
+}
+
+.landing .text_landing {
+    position: relative;
+    width: 100%;
+}
+
+
+.landing .text_landing img {
+    width: 100%;
+}
+
+.landing .over_landing {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 30px;
+}
+
+.landing h2 {
+    text-transform: capitalize;
+    color: var(--main-color);
+    font-size: 35px;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.landing .over_landing q {
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-size: 25px;
+}
+
+.landing .over_landing p {
+    line-height: 1.6;
+    font-size: 20px;
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.landing .over_landing a {
+    color: white;
+    background-color: var(--main-color);
+    padding: 10px 15px;
+    width: fit-content;
+    align-self: center;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.landing .over_landing a:hover {
+    border: 1px solid var(--main-color);
+    background-color: white;
+    color: var(--main-color);
+}
+
+/* END LANDING */
+/* START HEALTH AND LIFE */
+.healthy_life {
+    background-color: var(--section-color);
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 150px;
+}
+
+.healthy_life .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.healthy_life h2 {
+    text-transform: capitalize;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.healthy_life p {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.healthy_life a {
+    background-color: var(--main-color);
+    color: white;
+    padding: 12px 32px;
+    text-transform: capitalize;
+    margin: 20px;
+    margin-bottom: 120px;
+}
+
+.healthy_life a:hover {
+    background-color: white;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.healthy_life .img_story {
+    position: relative;
+}
+
+.healthy_life .img_story_1 {
+    position: absolute;
+    left: 15%;
+    transform: translateX(-15%);
+    bottom: -190px;
+    z-index: 3;
+}
+
+.healthy_life .img_story_2 {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.healthy_life .img_story_3 {
+    position: absolute;
+    left: 80%;
+    bottom: -300px;
+    transform: translateX(-80%);
+    z-index: 1;
+}
+
+/* END HEALTH AND LIFE */
+/* START SERVICES */
+.services {
+    padding-top: 290px;
+    margin-top: 290px;
+    padding-bottom: 100px;
+}
+
+.services h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.services .container {
+    text-align: center;
+}
+
+.services .box_service {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid var(--main-color);
+}
+
+.services .box_service:last-of-type {
+    border-bottom: 1px solid var(--main-color);
+}
+
+.services .type_services h3 {
+    text-align: start;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.services .time_services p {
+    color: var(--main-color);
+}
+
+.services .book_services a {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    display: block;
+}
+
+/* END SERVICES */
+/* START TESTIMONIALS */
+
+.testimonials .container {
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    padding: 20px 0;
+}
+
+.testimonials .container h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.testimonials .container q {
+    font-size: 25px;
+    line-height: 1.60;
+    text-align: center;
+    padding: 20px;
+    width: 600px;
+}
+
+.testimonials .container .name {
+    display: flex;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.testimonials .loding {
+    display: flex;
+
+}
+
+.testimonials .loding span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.384);
+    margin-left: 20px;
+}
+
+.testimonials .loding .active {
+    background-color: white;
+}
+
+/* END TESTIMONIALS */
+/* START NOURISH */
+.nourish {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.nourish::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 300px;
+    background-color: var(--section-color);
+    bottom: -100px;
+}
+
+.nourish h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 35px;
+    padding: 10px 0;
+
+}
+
+.nourish .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.nourish .box_nourish {
+    width: 100%;
+    position: relative;
+}
+
+.nourish .text_box_nourish {
+    position: absolute;
+    bottom: 25px;
+    margin: 10px;
+}
+
+.nourish .text_box_nourish p {
+    text-transform: capitalize;
+    color: white;
+    font-size: 22px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+.nourish .box_nourish::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--over-image-color);
+
+}
+
+.nourish .box_nourish img {
+    width: 100%;
+    height: 292PX;
+}
+
+.nourish .box_nourish span {
+    color: white;
+}
+
+.nourish .box_nourish span i {
+    padding-right: 10px;
+}
+
+.nourish a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    color: white;
+    background-color: var(--main-color);
+    padding: 12px 30px;
+    margin-top: 40px;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.nourish a:hover {
+    border: 1px solid var(--main-color);
+    background-color: white;
+    color: var(--main-color);
+}
+
+/* END NOURISH */
+/* START FEATURED */
+.featured {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.featured h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.featured .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* END EATURES */
+/* START CONTACT */
+.contact {
+    background-color: var(--main-color);
+    color: white;
+    padding: 100px 0;
+}
+
+
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .box_contact h2 {
+    text-transform: capitalize;
+}
+
+.contact .box_contact:first-of-type h2 {
+    font-size: 35px;
+}
+
+.contact .box_contact .data_name {
+    display: flex;
+}
+
+.contact .box_contact .firstname,
+.contact .box_contact .lastname,
+.contact .box_contact .email,
+.contact .box_contact .message {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    margin: 10px;
+}
+
+.contact .firstname input::selection {
+    border: 0 solid transparent;
+}
+
+.contact .firstname input,
+.contact .lastname input,
+.contact .email input,
+.contact .message input {
+    background-color: var(--main-color);
+    border: 0 solid transparent;
+    border-bottom: 2px solid white;
+    outline: 0 solid transparent;
+    padding: 15px;
+    margin-top: 10px;
+
+}
+
+.contact .box_contact>input {
+    background-color: white;
+    text-transform: capitalize;
+    color: var(--main-color);
+    padding: 12px 35px;
+    border-width: 0;
+    margin: 10px;
+}
+
+.contact .box_contact:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact .box_contact:nth-of-type(2) .phone,
+.contact .box_contact:nth-of-type(2) .address {
+    line-height: 1.6;
+}
+
+.contact .box_contact:nth-of-type(3) .social i {
+    padding-right: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+/* END CONTACT */
+/* START SOCIAL  */
+.social_fixed {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    z-index: 4;
+}
+
+.social_fixed a {
+    display: block;
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.social_fixed a i {
+    font-size: 20px;
+}
+
+.chat {
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    z-index: 4;
+    padding: 12px 35px;
+    text-transform: capitalize;
+    font-size: 20px;
+    box-shadow: 0 0 10px white;
+}
+
+/* END SOCIAL */
+
+
+
+
+/* STRAT PAGE PHILOSOPHY */
+
+/* END PAGE PHILOSOPHY */
+/* START PAGE PRICING AND PLANS */
+.pricing_plans {
+    background-color: var(--section-color);
+    padding: 60px 0;
+}
+
+.pricing_plans .mian_tital_pages {
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+.pricing_plans>p {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 30px 0;
+}
+
+
+.pricing_plans .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 100px;
+
+}
+
+.pricing_plans .card_nourish {
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+
+}
+
+
+.pricing_plans .card_nourish:nth-of-type(2)::before {
+    position: absolute;
+    content: "best value";
+    background-color: var(--main-color);
+    color: white;
+    top: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 15px;
+    text-transform: capitalize;
+}
+
+.pricing_plans .text_price {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+
+.pricing_plans .text_price h5 {
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.pricing_plans .text_price h6 {
+    position: relative;
+    font-size: 50px;
+    font-weight: normal;
+    margin: 5px 0;
+    padding: 10px 0;
+
+}
+
+.pricing_plans .text_price h6::before {
+    position: absolute;
+    content: "$";
+    top: -5px;
+    left: 85px;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.pricing_plans .text_price a {
+    display: block;
+    background-color: var(--main-color);
+    color: white;
+    padding: 12px 25px;
+    justify-content: center;
+}
+
+/* END PAGE PRICING AND PLANS */
+/* START PAGE BLOG */
+.blog {
+    background-color: var(--section-color);
+    padding: 60px 0;
+}
+
+.blog>p {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.blog .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+
+}
+
+.blog .card_blog {
+    background-color: white;
+    height: fit-content;
+}
+
+.blog .card_blog img {
+    width: 100%;
+}
+
+.blog .text_log {
+    padding: 20px;
+}
+
+.blog .text_log a {
+    color: black;
+}
+
+.blog .text_log .post {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.blog .text_log .post:hover {
+    color: var(--main-color);
+}
+
+.blog .comments {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+
+.blog .comments a:hover {
+    color: var(--main-color);
+}
+
+.blog .comments span i {
+    color: red;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+/* END PAGE BLOG */
+/* START PAGE SIGN UP AND LOGIN */
+.signup_login {
+    background-color: var(--section-color);
+    padding: 50px 0;
+}
+
+.signup_login .container {
+    background-color: white;
+    padding: 0 30px;
+}
+
+
+.signup_login .tital_signup {
+    padding: 30px;
+    font-weight: normal;
+    font-size: 30px;
+    color: #777;
+    text-transform: capitalize;
+    border-bottom: 1px solid #ccc;
+}
+
+.signup_login .box_signup {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.signup_login .signup {
+    margin: 20px;
+}
+
+.signup_login .signup li:first-of-type {
+    text-transform: capitalize;
+    font-size: 25px;
+
+}
+
+.signup_login .signup p {
+    padding-right: 20px;
+}
+
+.signup_login .signup a {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 15px 30px;
+    margin: 25px 10px;
+    width: 45%;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.signup_login .signup a:first-of-type {
+    background-color: black;
+    color: white;
+}
+
+.signup_login .signup a:last-of-type {
+    color: black;
+}
+
+.signup_login .signup li:last-of-type {
+    text-transform: capitalize;
+    font-size: 25px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    color: #ccc;
+    font-weight: 300;
+}
+
+
+.signup_login .order_summery {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 320px;
+    min-width: 320px;
+    text-transform: capitalize;
+}
+
+.signup_login h3 {
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.signup_login .text_order_summery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup_login .text_order_summery:last-of-type {
+    font-size: 25px;
+    font-weight: 200;
+    border-top: 1px solid #ccc;
+}
+
+.signup_login .box_order_summery p {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+/* END PAGE SIGN UP AND LOGIN */
+
+/* START MEDIA MOBIAL */
+@media (max-width:767px) {
+
+    /* START HEADER SCREEN MOBILE */
+    header ul {
+        display: none;
+    }
+
+    header .links {
+        position: relative;
+        display: block;
+        color: var(--main-color);
+        font-size: 25px;
+        text-align: end;
+    }
+
+    header nav .links:hover+ul {
+        display: block;
+        width: 100%;
+        z-index: 2;
+        position: absolute;
+        background-color: white;
+        left: 0;
+        text-align: center;
+
+    }
+
+    /* END HEADER SCREEN MOBILE */
+    /* START LANDING SCREEN MOBILE */
+    .landing {
+        display: none;
+    }
+
+    .landing_mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landing_mobile .over_landing_mobile {
+        padding: 20px;
+    }
+
+    .landing_mobile .over_landing_mobile h2 {
+        text-transform: capitalize;
+        color: var(--main-color);
+        font-size: 35px;
+        font-family: 'Reem Kufi Fun', sans-serif;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .landing_mobile .over_landing_mobile q {
+        font-family: 'Reem Kufi Fun', sans-serif;
+        font-size: 25px;
+    }
+
+    .landing_mobile .over_landing_mobile p {
+        line-height: 1.6;
+        font-size: 20px;
+        font-family: 'Reem Kufi Fun', sans-serif;
+    }
+
+    .landing_mobile .over_landing_mobile a {
+        color: white;
+        background-color: var(--main-color);
+        padding: 12px 15px;
+        width: fit-content;
+        align-self: center;
+        text-transform: capitalize;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: .3s;
+        display: block;
+    }
+
+    .landing_mobile .over_landing_mobile a:hover {
+        border: 1px solid var(--main-color);
+        color: var(--main-color);
+        background-color: white;
+    }
+
+    .landing .text_landing img {
+        width: 100%;
+    }
+
+    .landing .landing_person {
+        width: 100%;
+    }
+
+    .landing .over_landing {
+        width: 100%;
+    }
+
+    /* END LANDING SCREEN MOBILE */
+    /* START SOCIAL */
+    .chat span {
+        display: none;
+    }
+
+    /* END SOCIAL */
+    /* START HEALTHY LIFE SECREEN MOBILE*/
+
+    .healthy_life {
+        padding-bottom: 20px;
+    }
+
+    .healthy_life a {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .healthy_life .img_store {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .healthy_life .img_story_1,
+    .healthy_life .img_story_2,
+    .healthy_life .img_story_3 {
+
+        position: static;
+        transform: translateX(0);
+    }
+
+    .healthy_life .img_story_1 img,
+    .healthy_life .img_story_2 img,
+    .healthy_life .img_story_3 img {
+        width: 100%;
+        z-index: 0;
+    }
+
+    /* END HEALTHY LIFE SECREEN MOBILE*/
+    /* START SERVICES SCREEN MOBILE */
+    .services {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .services .box_service {
+        flex-direction: column;
+        border: 1px solid var(--main-color);
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .services .box_service .type_services {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .services .box_service .book_services {
+        width: 100%;
+        margin: 10px;
+    }
+
+    /* END SERVICES SCREEN MOBILE*/
+    /* START TESTIMONIALS SCREEN MOBILE*/
+    .testimonials {
+        min-height: 400px;
+    }
+
+    .testimonials .container .name {
+        padding: 1px;
+    }
+
+    .testimonials .container h2 {
+        margin: 2px;
+    }
+
+    .testimonials .container q {
+        width: 300px;
+        width: 375px;
+        text-align: start;
+    }
+
+    .testimonials .container .loding {
+        padding: 10px;
+    }
+
+    /* END TESTIMONIALS SCREEN MOBILE*/
+    /* START NOURISH SCREEN MOBILE */
+    .nourish {
+        padding: 10px;
+    }
+
+    /* END NOURISH SCREEN MOBILE */
+    /* START FEATURED SCREEN MOBILE */
+    .featured {
+        padding-bottom: 50px;
+    }
+
+    .featured .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured .container img {
+        width: 150px;
+        margin-bottom: 30px;
+    }
+
+    /* END FEATURED SCREEN MOBILE */
+    /* START CONTACT SCREEN MOBILE */
+    .contact .container {
+        flex-direction: column;
+    }
+
+    .contact .box_contact .data_name {
+        flex-direction: column;
+    }
+
+    /* END CONTACT SCREEN MOBILE */
+    /* START PAGES SIGN UP AND LOGIN MOBILE SCREEN */
+    .signup_login .box_signup {
+        flex-wrap: wrap;
+    }
+
+    .signup_login .signup a {
+        width: 90%;
+    }
+
+    /* END PAGES SIGN UP AND LOGIN MOBILE SCREEN */
+
+}
+
+/* END MEDIA MOBIAL */
