@@ -118,17 +118,53 @@
 <!-- END SERVICES -->
 <!-- START TESTIMONIALS -->
 <section class="testimonials">
+    <h2>testimonials</h2>
     <div class="container">
-        <h2>testimonials</h2>
-        <q>I'm a testimonial. click to edit me and add text that
-            says something nice about you and your services.Let your
-            customers review you and tell their friends how great you are.</q>
-        <span class="name">alex,31</span>
-        <span class="loding">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-        </span>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'images/my_store_1.jpg'%}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/my_store_2.jpg'%}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/my_store_3.jpg'%}" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+        <!-- {% for testi in testimonials %}
+        <div class="box_testimonials">
+            <div class="video_review">
+                <video autoplay loop>
+                    <source src="{{ testi.video.url }}" type="video/mp4" autoplay loop>
+                </video>
+            </div>
+            <div class="text_test">
+                <q>{{ testi.description}}</q>
+                <span class="name">{{ testi.name }}</span>
+                <span class="loding">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+        </div>
+        {% endfor %} -->
+
     </div>
 </section>
 <!-- END TESTIMONIALS -->
@@ -136,27 +172,15 @@
 <section class="nourish">
     <h2>nourish your body & soul</h2>
     <div class="container">
+        {% for article in articles %}
         <div class="box_nourish">
-            <img src="{% static 'images/nourish_1.jpg' %}" alt="">
+            <img src="{{ article.image.url}}" alt="">
             <div class="text_box_nourish">
-                <p>how to change your eating habits</p>
-                <span><i class="fa-regular fa-message"></i>0</span>
+                <p>{{ article.title}}</p>
+                <span><i class="fa-regular fa-message"></i>{{ article.comments.count}}</span>
             </div>
         </div>
-        <div class="box_nourish">
-            <img src="{% static 'images/nourish_2.jpg' %}" alt="">
-            <div class="text_box_nourish">
-                <p>don't be afraid of the scale!</p>
-                <span><i class="fa-regular fa-message"></i>0</span>
-            </div>
-        </div>
-        <div class="box_nourish">
-            <img src="{% static 'images/nourish_3.jpg' %}" alt="">
-            <div class="text_box_nourish">
-                <p>the 3 best podcaste for intuitive eating</p>
-                <span><i class="fa-regular fa-message"></i>0</span>
-            </div>
-        </div>
+        {% endfor %}
     </div>
     <a href="blog.html">read more</a>
 </section>

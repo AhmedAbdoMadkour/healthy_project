@@ -323,8 +323,13 @@ header .links {
 
 /* END SERVICES */
 /* START TESTIMONIALS */
+.testimonials h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+}
 
-.testimonials .container {
+/* .testimonials .container {
     background-color: var(--main-color);
     color: white;
     display: flex;
@@ -333,12 +338,26 @@ header .links {
     align-items: center;
     height: 400px;
     padding: 20px 0;
+} */
+
+.testimonials .container .box_testimonials {
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    padding: 20px 0;
 }
 
-.testimonials .container h2 {
-    font-size: 40px;
-    text-transform: capitalize;
+.testimonials .container .video_review video {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
 }
+
+
 
 .testimonials .container q {
     font-size: 25px;
