@@ -122,15 +122,43 @@
     <div class="container">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
+
+                <!-- <div class="carousel-item active">
+                    <img src="{% static 'images/my_store_1.jpg'%}" alt="..." class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Here are our customer's opinions</h5>
+                        <!-- <p>{{ testi.description}}</p> 
+                    </div>
+                </div> -->
+
+                {% for testi in testimonials %}
+
+                {% if forloop.first %}
                 <div class="carousel-item active">
-                    <img src="{% static 'images/my_store_1.jpg'%}" class="d-block w-100" alt="...">
+                    <video class="d-block w-100" autoplay loop muted>
+                        <source src="{{ testi.video.url}}" type="video/mp4">
+                    </video>
+                    <!-- <img src="" alt="..." class="d-block w-100"> -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>index</h5>
+                        <p>{{ testi.description}}</p>
+                    </div>
                 </div>
+                {% else %}
                 <div class="carousel-item">
-                    <img src="{% static 'images/my_store_2.jpg'%}" class="d-block w-100" alt="...">
+                    <video class="d-block w-100" autoplay loop muted>
+                        <source src="{{ testi.video.url}}" type="video/mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>index</h5>
+                        <p>{{ testi.description}}</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="{% static 'images/my_store_3.jpg'%}" class="d-block w-100" alt="...">
-                </div>
+                {% endif %}
+
+                {% endfor %}
+
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                 data-bs-slide="prev">
