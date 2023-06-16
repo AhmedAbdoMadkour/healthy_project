@@ -19,9 +19,13 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
+admin.site.site_title = "Dite Track"
+admin.site.site_header = "Dite Track"
+admin.site.index_title = "Coach Page"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', include('home.urls')),
+    path('', include('home.urls')),
     path('blog/', include('blog.urls')),
     path('pricing/', include('pricing.urls')),
 

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<!-- start top video -->
+<section class="topvideo" id="topvideo">
+    <div class="container">
+        <div class="list_video">
+            <div class="hide_list_video">
+                <h4>top video</h4>
+                <i class="fas fa-random"></i>
+            </div>
+            <div class="content_list_video">
+                <p>How To Create Sub Domain</p>
+                <span>05:18</span>
+            </div>
+            <div class="content_list_video">
+                <p>HPlaying With The DNS
+                </p>
+                <span>03:18</span>
+            </div>
+            <div class="content_list_video">
+                <p>Everything About The Virtual Hosts</p>
+                <span>05:25</span>
+            </div>
+            <div class="content_list_video">
+                <p>How To Monitor Your Website</p>
+                <span>04:16</span>
+            </div>
+            <div class="content_list_video">
+                <p>Uncharted Beating The Last Boss</p>
+                <span>07:48</span>
+            </div>
+        </div>
+        <div class="preview_video">
+            <video autoplay loop controls>
+                <source src="images/top_videos.mp4" type="video/mp4">
+            </video>
+
+        </div>
+    </div>
+    <div class="comments">
+        <h2>comments</h2>
+        <form class="write_comment">
+            <input type="text" placeholder="write a commite" class="text_commite">
+            <input type="submit" value="publish" class="publish">
+            <input type="text" disabled>
+        </form>
+    </div>
+</section>
+<!-- end top video -->
+
+{% endblock%}

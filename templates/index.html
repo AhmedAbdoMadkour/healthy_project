@@ -204,25 +204,40 @@
         <div class="box_nourish">
             <img src="{{ article.image.url}}" alt="">
             <div class="text_box_nourish">
-                <p>{{ article.title}}</p>
+                <a href="{% url 'blog' %}">
+                    <p>{{ article.title}}</p>
+                </a>
                 <span><i class="fa-regular fa-message"></i>{{ article.comments.count}}</span>
             </div>
         </div>
         {% endfor %}
     </div>
-    <a href="blog.html">read more</a>
+    <a href="{% url 'blog' %}" class="link_read">read more</a>
 </section>
 <!-- END NOURISH -->
 <!-- START FEATURED -->
 <section class="featured">
-    <h2>as featured in</h2>
+    <h1>we got no fans we got </h1>
     <div class="container">
-        <img src="{% static 'images/featured_1.jpg' %}" alt="">
-        <img src="{% static 'images/featured_2.jpg' %}" alt="">
-        <img src="{% static 'images/featured_3.jpg' %}" alt="">
-        <img src="{% static 'images/featured_4.jpg' %}" alt="">
-        <img src="{% static 'images/featured_5.jpg' %}" alt="">
+        <div class="counter">
+            <a href="https://www.facebook.com/profile.php?id=100064284721355">
+                <i class="fa-brands fa-facebook"></i></a>
+            <h2 class="count" data-target="1254">0</h2>
+        </div>
+        <div class="counter">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <h2 class="count" data-target="1254">0</h2>
+        </div>
+        <div class="counter">
+            <a href="https://www.instagram.com/diet.track.ahmed_tantawy/"><i class="fa-brands fa-instagram"></i></a>
+            <h2 class="count" data-target="12168">0</h2>
+        </div>
+        <div class="counter">
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <h2 class="count" data-target="732">0</h2>
+        </div>
     </div>
+
 </section>
 <!-- END FEATURED -->
 {% endblock %}

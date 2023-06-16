@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<!-- END HEADER -->
+<section class="read_article">
+    <div class="container">
+        <div class="card_blog">
+            <span>{{ article.publish_date }}</span>
+            <h2>{{ article.title }}</h2>
+            <img src="{% static 'images/nourish_1.jpg' %}" alt="">
+            <div class="text_blog">
+                <p>{{ article.description}}</p>
+                <q>Do you have a design in mind for your blog? Whether you prefer a trendy postcard look or
+                    you’re going for a more editorial style blog - there’s a stunning layout for everyone.</q>
+            </div>
+        </div>
+        <div class="title_recent">
+            <h5>recent posts</h5>
+            <a href="{% url 'blog' %}">see all</a>
+        </div>
+        <div class="recent_posts">
+            {% for article in recent_articles %}
+            <div class="box_nourish">
+                <img src="{{article.image.url}}" alt="">
+                <div class="text_box_nourish">
+                    <a href="read_article.html">
+                        <p>{{article.title}}</p>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+        <div class="comments">
+            <h2>comments</h2>
+            <form class="write_comment" action="{% url 'article' %}" method="post">
+                {% csrf_token %}
+                <input type="text" placeholder="write a commite" class="text_commite">
+                <input type="submit" value="publish" class="publish">
+                <input type="text" disabled>
+            </form>
+
+            {% for comment in article.comments.all %}
+            <p style="display: block;">{{comment.comment}}</p>
+
+
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock%}
