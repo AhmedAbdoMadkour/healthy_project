@@ -807,11 +807,12 @@ header .links {
     position: absolute;
     content: "family";
     margin-left: 5px;
-    background-image: linear-gradient(to right, var(--main-color), orangered);
+    color: var(--main-color);
+    /* background-image: linear-gradient(to right, var(--main-color), orangered); */
     font-weight: bold;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
 }
 
 .featured .container {
@@ -1233,7 +1234,129 @@ header .links {
 }
 
 /* END PAGE SIGN UP AND LOGIN */
+/* START PAGE CALORIE CALCULATOR */
+.calories {
+    text-transform: capitalize;
+    background-color: var(--section-color);
+    padding: 15px 0;
+}
 
+.calories .mian_tital_pages {
+    margin: 0;
+}
+
+.calories .container {
+    background-color: white;
+    padding: 25px;
+}
+
+.calories .container p {
+    line-height: 1.6;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.calories .boxs_calories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 40px;
+    align-items: center;
+
+}
+
+
+
+.calories .data_user {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    gap: 20px; */
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+}
+
+.calories .data_user input {
+    padding: 10px;
+    text-transform: capitalize;
+    border: 1px solid var(--main-color);
+    border-left: 3px solid var(--main-color);
+    outline-style: none;
+    width: 370px;
+    margin-bottom: 20px;
+}
+
+
+.calories .data_user input:nth-of-type(3) {
+    background-color: var(--main-color);
+    width: 150px;
+    color: white;
+}
+
+input:focus {
+    color: #008566;
+}
+
+.calories .calorie_calc {
+    padding: 25px 0;
+}
+
+.calories .boxs_calories .box-calorie {
+    padding: 25px;
+}
+
+.calories .boxs_calories .information {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.calories .boxs_calories .information input {
+    padding: 10px 7px;
+    text-transform: capitalize;
+    border: 1px solid var(--main-color);
+    border-left: 3px solid var(--main-color);
+    outline-style: none;
+}
+
+.calories .boxs_calories .goal_activty .goal {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.calories .goal input {
+    padding: 10px 7px;
+    width: 370px;
+    border: 1px solid var(--main-color);
+    border-left: 3px solid var(--main-color);
+    outline-style: none;
+}
+
+.calories .goal_activty .activty {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+
+.calories .result .box_result {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+}
+
+.calories .result .box_result h4 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+
+}
+
+/* END PAGE CALORIE CALCULATOR */
 /* START MEDIA MOBIAL */
 @media (max-width:767px) {
 

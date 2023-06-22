@@ -28,6 +28,8 @@ urlpatterns = [
     path('', include('home.urls')),
     path('blog/', include('blog.urls')),
     path('pricing/', include('pricing.urls')),
+    path('channel/', include('channel.urls')),
+
 
 ]
 
