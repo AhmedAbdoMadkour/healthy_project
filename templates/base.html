@@ -44,25 +44,59 @@
     <!-- START HEADER -->
     <header>
         <div class="container">
-            <a href="{% url 'home' %}"> <img src="{% static 'images/logo.jpeg' %} " alt="" class="logo"></a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-            <nav>
-                <i class="fa-solid fa-bars links"></i>
-                <ul>
-                    <li class="link_calc">calculator</li>
-                    <ul class="calculator">
-                        <li><a href="calorie_calculator.html">calorie calculator</a></li>
-                        <li><a href="bmr_calculator.html">bmr calculator</a></li>
-                        <li><a href="tdee_calculator.html">tdee calculator</a></li>
-                    </ul>
-                    <li><a href="{% url 'pricing' %}">pricing & plans</a></li>
-                    <li><a href="{% url 'top_videos' %}">top videos</a></li>
-                    <li><a href="{% url 'blog' %}">blog</a></li>
-                    <li><a href="../dashboard_template_four/index.html"><i class="fa-solid fa-circle-user"></i>log
-                            in</a></li>
-                </ul>
+                <!-- <a href="{% url 'home' %}"> <img src="{% static 'images/logo.jpeg' %} " alt="" class="logo"></a> -->
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="{% static 'images/logo.jpeg' %}" alt="" width="70" height="50">
+                </a>
+
+
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="{% url 'blog' %}">blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'top_videos' %}">Top videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'pricing' %}">pricing & plans</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Calculator
+                                </a>
+                                <ul class="dropdown-menu calculator" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="{% url 'calorie_calculator' %}">calorie
+                                            calculator</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'bmr_calculator' %}">bmr calculator</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="{% url 'tdee_calculator' %}">tdee calculator</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
             </nav>
+
         </div>
+
+
+
     </header>
     <!-- END HEADER -->
     <!-- START MAIN TITAL PAGES  -->

@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'blog',
     'pricing',
     'channel',
+    'calculator',
 ]
 
 MIDDLEWARE = [
