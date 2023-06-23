@@ -4,69 +4,82 @@
 
 {% block body %}
 <section class="calories">
+    <!-- START MAIN TITAL PAGES  -->
+    <h1 class="mian_tital_pages">tdee calculator</h1>
+    <!-- END MAIN TITAL PAGES -->
     <div class="container">
         <p>The Calorie Calculator can be used to estimate the number of calories a person needs to consume each day.
             This calculator can also provide some simple guidelines for gaining or losing weight.</p>
-        <form action="" class="data_user">
-            <input type="text" placeholder="your name" required>
-            <input type="email" placeholder="email address" required>
-            <input type="submit" value="submit data">
-        </form>
-        <div class="calorie_calc">
-            <form action="" class="information">
-                <input list="sex">
-                <datalist id="sex">
-                    <option value="male">male</option>
-                    <option value="female">female</option>
-                </datalist>
-                <input type="number" placeholder="years" required>
-                <input type="number" placeholder="weight" required>
-                <input type="number" placeholder="height" required>
-            </form>
-            <div class="goal_activty">
-                <form action="" class="goal">
-                    <input list="goal">
-                    <datalist id="goal">
-                        <option value="maintian">maintion weight</option>
-                        <option value="loss">weight loss</option>
-                        <option value="extreme">extreme weight loss</option>
-                        <option value="gain">weight gain</option>
-                        <option value="fast_gain">fast weight gain</option>
-                    </datalist>
+        <div class="boxs_calories">
+            <div class="box-calorie">
+                <h6>data user</h6>
+                <form action="" class="data_user">
+                    <input type="text" placeholder="your name" required>
+                    <input type="email" placeholder="email address" required>
+                    <input type="submit" value="submit data">
                 </form>
-                <div class="activty">
-                    <div class="sedentary">
-                        <input type="radio" name="" id="sedentary">
-                        <label for="sedentary">sedentary</label>
-                    </div>
-                    <div class="active">
-                        <input type="radio" name="" id="active">
-                        <label for="active">active</label>
-                    </div>
-                    <div class="light">
-                        <input type="radio" name="" id="light">
-                        <label for="light">light</label>
-                    </div>
-                    <div class="very_active">
-                        <input type="radio" name="" id="very_active">
-                        <label for="very_active">very active</label>
-                    </div>
-                    <div class="moderate">
-                        <input type="radio" name="" id="moderate">
-                        <label for="moderate">moderate</label>
-                    </div>
-                    <div class="extra_active">
-                        <input type="radio" name="" id="extra_active">
-                        <label for="extra_active">extra active</label>
+                <div class="calorie_calc">
+                    <h6>basic information</h6>
+                    <form action="" class="information">
+                        <input list="sex">
+                        <datalist id="sex">
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                        </datalist>
+                        <input type="number" placeholder="years" required>
+                        <input type="number" placeholder="weight" required>
+                        <input type="number" placeholder="height" required>
+                    </form>
+                    <div class="goal_activty">
+                        <form action="" class="goal">
+                            <h6>goal</h6>
+                            <input list="goal">
+                            <datalist id="goal">
+                                <option value="maintian">maintion weight</option>
+                                <option value="loss">weight loss</option>
+                                <option value="extreme">extreme weight loss</option>
+                                <option value="gain">weight gain</option>
+                                <option value="fast_gain">fast weight gain</option>
+                            </datalist>
+                        </form>
+                        <h6 class="tital_active">activity level</h6>
+                        <div class="activty">
+                            <div class="sedentary">
+                                <input type="radio" name="" id="sedentary">
+                                <label for="sedentary">sedentary</label>
+                            </div>
+                            <div class="active">
+                                <input type="radio" name="" id="active">
+                                <label for="active">active</label>
+                            </div>
+                            <div class="light">
+                                <input type="radio" name="" id="light">
+                                <label for="light">light</label>
+                            </div>
+                            <div class="very_active">
+                                <input type="radio" name="" id="very_active">
+                                <label for="very_active">very active</label>
+                            </div>
+                            <div class="moderate">
+                                <input type="radio" name="" id="moderate">
+                                <label for="moderate">moderate</label>
+                            </div>
+                            <div class="extra_active">
+                                <input type="radio" name="" id="extra_active">
+                                <label for="extra_active">extra active</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="result">
-            <i class="fa-solid fa-panel-fire"></i>
-            <h3>your results</h3>
-            <h4>Target calorie intake per day</h4>
-            <p>0</p>
+            <div class="result">
+                <div class="box_result">
+                    <i class="fa-solid fa-panel-fire"></i>
+                    <h3>your results</h3>
+                    <h4>Target calorie intake per day</h4>
+                    <p>0</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>

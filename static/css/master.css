@@ -1252,8 +1252,8 @@ header .links {
 
 .calories .container p {
     line-height: 1.6;
-    font-weight: bold;
     font-size: 16px;
+    color: #6c757d;
 }
 
 .calories .boxs_calories {
@@ -1341,6 +1341,7 @@ input:focus {
 }
 
 
+
 .calories .result .box_result {
     width: 300px;
     border: 1px solid #ddd;
@@ -1354,6 +1355,10 @@ input:focus {
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
 
+}
+
+.calories .goal_activty .tital_active {
+    padding: 20px 0;
 }
 
 /* END PAGE CALORIE CALCULATOR */
@@ -1383,6 +1388,13 @@ input:focus {
         text-align: center;
 
     }
+
+    header .navbar {
+        flex-wrap: nowrap;
+        text-align: end;
+    }
+
+    header .navbar-toggler {}
 
     /* END HEADER SCREEN MOBILE */
     /* START LANDING SCREEN MOBILE */
