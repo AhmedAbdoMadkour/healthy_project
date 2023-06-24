@@ -20,6 +20,7 @@ counts.forEach((counter) => {
 const translations = {
     en: {
         // START PAGE BASE
+        // SCTION HEADER
         blog: "Blog",
         top_videos: "Top Videos",
         pricing_plans: "pricing & Plans",
@@ -30,6 +31,8 @@ const translations = {
         tdee_calc: "Tdee Calculator",
         english: "English",
         arabic: "Arabic",
+        // SCTION CONTACT
+        contact: "contact us",
         // END PAGE BASE
         // START PAGE INDEX
         // SECTION LANDING
@@ -40,11 +43,16 @@ const translations = {
         services: "services",
         // SCTION TESTIMONIALS
         testimonials: "testimonials",
+        // SCTION NOURISH
+        nourish: "nourish your body & soul",
+        // SCTION FEATURED
+        featured: "Let's grow our ",
         // END PAGE INDEX
 
     },
     ar: {
         // START PAGE BASE
+        // SCTION HEADER
         blog: "مدونة",
         top_videos: "أهم الفديوهات",
         pricing_plans: "التسعير و الخطط",
@@ -54,6 +62,8 @@ const translations = {
         tdee_calc: "حاسبة tdee",
         english: "الانجليزية",
         arabic: "العربية",
+        // SCTION CONTACT
+        contact: "توأصل معنا",
         // END PAGE BASE
         // START PAGE INDEX
         // SECTION LANDING
@@ -64,6 +74,10 @@ const translations = {
         services: "خدماتي",
         // SCTION TESTIMONIALS
         testimonials: "أراء عائلتنا",
+        // SCTION NOURISH
+        nourish: "تغذي جسدك وروحك",
+        // SCTION FEATURED
+        featured: "دعونا لننمو ",
         // END PAGE INDEX
     },
 };

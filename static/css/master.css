@@ -808,7 +808,7 @@ header .links {
     content: "family";
     margin-left: 5px;
     color: var(--main-color);
-    /* background-image: linear-gradient(to right, var(--main-color), orangered); */
+    /* background-image: linear-gradient(to right, var(--main-color), orangered); 
     font-weight: bold;
     /* -webkit-text-fill-color: transparent; */
     /* -webkit-background-clip: text; */
@@ -1600,3 +1600,16 @@ input:focus {
 }
 
 /* END MEDIA MOBIAL */
+
+/* START LANGUAGE PAGE ARABIC */
+/* html[dir="rtl"]:root {
+    --main-color: red;
+    color: black;
+} */
+
+html[dir="rtl"] .featured h1::after {
+    position: absolute;
+    content: "عائلتنا";
+}
+
+/* END LANGUAGE PAGE ARABIC */
