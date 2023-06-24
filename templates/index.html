@@ -204,7 +204,7 @@
         <div class="box_nourish">
             <img src="{{ article.image.url}}" alt="">
             <div class="text_box_nourish">
-                <a href="{% url 'blog' %}">
+                <a href="{% url 'article' 5 %}">
                     <p>{{ article.title}}</p>
                 </a>
                 <span><i class="fa-regular fa-message"></i>{{ article.comments.count}}</span>

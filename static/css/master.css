@@ -89,6 +89,10 @@ header .container {
     justify-content: space-between;
 }
 
+header .container .navbar {
+    background-color: white;
+}
+
 header .logo {
     width: 120px;
 }
