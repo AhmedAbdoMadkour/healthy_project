@@ -7,8 +7,8 @@ def articles(request):
     articles = Article.objects.prefetch_related('comments').prefetch_related('likes').all()
     return render(request, 'blog.html', {"articles": list(articles), "user": request.user})
 
-def article_details(request, pk):
 
+def article_details(request, pk):
     # if request.method == "POST":
     # else:
     article = Article.objects.prefetch_related('comments').get(pk=pk)
