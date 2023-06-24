@@ -1250,7 +1250,7 @@ header .links {
     padding: 25px;
 }
 
-.calories .container p {
+.calories .container .pargraph {
     line-height: 1.6;
     font-size: 16px;
     color: #6c757d;
@@ -1351,10 +1351,17 @@ input:focus {
     color: white;
 }
 
+
+
+
 .calories .result .box_result h4 {
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
 
+}
+
+.calories .result .box_result p {
+    color: white;
 }
 
 .calories .goal_activty .tital_active {
@@ -1389,17 +1396,13 @@ input:focus {
 
     }
 
-    header .navbar {
-        flex-wrap: nowrap;
-        text-align: end;
-    }
 
-    header .navbar-toggler {}
 
     /* END HEADER SCREEN MOBILE */
     /* START LANDING SCREEN MOBILE */
     .landing {
         display: none;
+
     }
 
     .landing_mobile {
